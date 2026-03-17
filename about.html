@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - D Chahel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">D Chahel</div>
+            <ul class="nav-links">
+                <div class="mobile-nav-header">
+                    <div class="logo">D Chahel</div>
+                    <div class="mobile-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-content">
+                    <p>Hello! I am D Chahel, a 2nd Year B.Tech Computer Science student at Vignan's Institute of Information and Technology. I am passionate about technology and software development, and I enjoy learning new tools, programming languages, and modern technologies.</p>
+                    <p>Currently, I am focusing on improving my programming skills, understanding Artificial Intelligence concepts, and building practical projects that help me gain real-world experience.</p>
+                    <p>I am interested in software development, problem solving, and exploring innovative technologies that can create useful and impactful solutions.</p>
+                    <p>My goal is to become a skilled software engineer and contribute to building technologies that make a positive impact in the world.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D Chahel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Viewer</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe id="certViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

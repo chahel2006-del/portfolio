@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - D Chahel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">D Chahel</div>
+            <ul class="nav-links">
+                <div class="mobile-nav-header">
+                    <div class="logo">D Chahel</div>
+                    <div class="mobile-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievements.html" class="active">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <h2 class="section-title">Achievements & <span class="highlight">Certifications</span></h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <h3>C Essential</h3>
+                        <a href="certificates/c-essential.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>HTML Essential</h3>
+                        <a href="certificates/html-essential.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>CSS Essential</h3>
+                        <a href="certificates/css-essential.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>Java Essential 1</h3>
+                        <a href="certificates/java-essential-1.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>Java Essential 2</h3>
+                        <a href="certificates/java-essential-2.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>DBMS</h3>
+                        <a href="certificates/dbms.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>Python Essential 1</h3>
+                        <a href="certificates/python-essential-1.pdf" class="cert-link">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D Chahel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Viewer</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe id="certViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

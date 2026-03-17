@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - D Chahel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">D Chahel</div>
+            <ul class="nav-links">
+                <div class="mobile-nav-header">
+                    <div class="logo">D Chahel</div>
+                    <div class="mobile-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">Contact</span> Me</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <!-- Contact Details Row (Email & Phone) -->
+                        <div class="contact-group">
+                            <div class="contact-item-area">
+                                <i class="fas fa-envelope"></i>
+                                <p><a href="mailto:chahel2006@gmail.com" class="contact-link">chahel2006@gmail.com</a></p>
+                            </div>
+                            <div class="contact-item-area">
+                                <i class="fas fa-phone"></i>
+                                <p><a href="tel:9494328775" class="contact-link">9494328775</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Social Links Row (LinkedIn, GitHub, CodeChef) -->
+                        <div class="social-links-row">
+                            <div class="contact-item-area">
+                                <i class="fab fa-linkedin-in"></i>
+                                <a href="https://www.linkedin.com/in/d-chahel-3380b6349/" target="_blank" class="contact-link">LinkedIn</a>
+                            </div>
+                            <div class="contact-item-area">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/chahel2006-del" target="_blank" class="contact-link">GitHub</a>
+                            </div>
+                            <div class="contact-item-area">
+                                <span class="cc-logo">CC</span>
+                                <a href="https://www.codechef.com/users/chahel_1009" target="_blank" class="contact-link">CodeChef</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D Chahel. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Viewer</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe id="certViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

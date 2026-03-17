@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - D Chahel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">D Chahel</div>
+            <ul class="nav-links">
+                <div class="mobile-nav-header">
+                    <div class="logo">D Chahel</div>
+                    <div class="mobile-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title">My <span class="highlight">Education</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>B.Tech in Computer Science Engineering</h3>
+                            <h4><a href="https://vignaniit.edu.in/" target="_blank" class="edu-link">Vignan's Institute of Information and Technology</a></h4>
+                            <p>Currently pursuing (2nd Year)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Intermediate (Class 11–12)</h3>
+                            <h4><a href="https://www.linkedin.com/in/dalton-junior-college-4117082b5/" target="_blank" class="edu-link">DALTON Junior College</a></h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Class 1–10</h3>
+                            <h4><a href="https://no1srivijayanagar.kvs.ac.in/en/" target="_blank" class="edu-link">K.V. No.1 SVN Visakhapatnam</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D Chahel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Viewer</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe id="certViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

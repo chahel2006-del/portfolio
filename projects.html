@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - D Chahel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">D Chahel</div>
+            <ul class="nav-links">
+                <div class="mobile-nav-header">
+                    <div class="logo">D Chahel</div>
+                    <div class="mobile-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Personal Portfolio Website</h3>
+                        <p class="project-desc">This is my first project, where I designed and developed a personal portfolio website to showcase my profile, skills, and projects. The website highlights my journey as a 2nd Year B.Tech Computer Science student at Vignan's Institute of Information and Technology and presents the technologies I am currently learning.</p>
+                        <p class="project-details">
+                            <strong>Technologies Used:</strong><br>
+                            HTML, CSS, JavaScript
+                        </p>
+                        
+                        <p class="project-details">
+                            <strong>Features:</strong><br>
+                            Clean and responsive design<br>
+                            About Me section introducing my background<br>
+                            Skills section displaying my technical abilities<br>
+                            Projects section to showcase my work<br>
+                            Contact section for communication
+                        </p>
+                    </div>
+                </div>
+                <p class="note">Note: More projects will be added as I continue learning and building new technologies.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D Chahel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Viewer</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe id="certViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
