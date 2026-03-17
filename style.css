@@ -655,26 +655,34 @@ footer {
         right: -100%;
         top: 0;
         height: 100vh;
+        height: 100dvh; /* Dynamic viewport height for mobile browsers */
         width: 100%;
-        max-width: 400px; /* Sidebar on tablets, full on phones */
+        max-width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        background-color: #0b0b0b; /* Uniform theme background */
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        background-color: var(--bg-color); /* Solid dark background to block content */
         transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
         opacity: 0;
         pointer-events: none;
-        z-index: 2000;
+        z-index: 5000; /* Ensure it's above everything */
         padding: 0;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: none;
+        overflow: hidden; /* No scrolling allowed */
     }
 
-    @media screen and (max-width: 480px) {
-        .nav-links {
-            max-width: 100%; /* Full screen on mobile phones */
-        }
+    /* Container for menu content to fit within top 90% */
+    .nav-links::after {
+        content: '';
+        display: block;
+        height: 10vh; /* Reserved 10% empty space at bottom */
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    /* Explicitly container-ize the header and links for 90vh control */
+    .nav-links > * {
+        max-height: 90vh; /* Content must fit within 90% */
     }
 
     .nav-links.active {
@@ -683,34 +691,30 @@ footer {
         pointer-events: auto;
     }
 
-
-    .mobile-close {
-        font-size: 32px;
-        color: var(--text-color);
-        cursor: pointer;
-        transition: all 0.3s ease;
+    .mobile-nav-header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-    }
-
-    .mobile-close:hover {
-        color: var(--accent-color);
-        transform: rotate(90deg);
+        padding: 15px 25px; /* Reduced vertical padding */
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 5px; /* Reduced margin */
+        flex-shrink: 0;
     }
 
     .nav-links li {
-        margin: 0;
+        flex: 1; /* Distribute remaining 90vh space equally */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateY(15px);
         transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
 
     .nav-links.active li {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
     
     .nav-links.active li:nth-child(2) { transition-delay: 0.1s; }
@@ -723,28 +727,28 @@ footer {
 
     .nav-links a {
         display: block;
-        padding: 20px 25px;
-        font-size: 19px;
-        color: #e0e0e0; /* light grey requested */
+        padding: 5px 25px; /* Compact vertical padding */
+        font-size: 16.5px; /* Reduced font size for better fit */
+        color: #e0e0e0;
         font-weight: 500;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        border-bottom: none;
         transition: all 0.3s ease;
-        text-align: left; /* Clean left alignment inside sidebar */
+        text-align: center;
+        width: 100%;
     }
 
     .nav-links a:hover,
     .nav-links a:active {
         color: var(--accent-color);
-        background-color: rgba(255, 0, 0, 0.03);
-        padding-left: 35px; /* Micro-interaction highlight */
+        background-color: transparent; /* Remove background highlight for cleaner full-screen look */
+        transform: scale(1.1);
     }
 
     .nav-links a.active {
         color: var(--accent-color);
-        background-color: rgba(255, 0, 0, 0.05);
-        border-left: 4px solid var(--accent-color);
+        background-color: transparent;
+        border-left: none; /* Remove side border for symmetry */
     }
 
     /* Adjust sections/hero for mobile */
@@ -887,3 +891,4 @@ footer {
         flex-direction: column;
     }
 }
+
